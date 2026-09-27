@@ -15,11 +15,8 @@
     }
   };
 
-  // Başlıqda növbə ilə yazılan sözlər
-  var TYPED = {
-    en: ['a C++ author', 'a computer specialist', 'a system administrator', 'a C++ instructor'],
-    az: ['C++ müəllifiyəm', 'kompüter mütəxəssisiyəm', 'sistem administratoruyam', 'C++ təlimçisiyəm']
-  };
+  // Başlıqda bir dəfə yazılan şüar (hər iki dildə eyni); index.html-dəki mətnlə eyni olmalıdır
+  var MOTTO = 'Creating systems driven by strong principles, not by individuals.\nComputer specialist.';
 
   // Sayt daxili axtarış üçün indeks
   var SEARCH = [
@@ -73,7 +70,6 @@
     });
     input.setAttribute('placeholder', input.getAttribute('data-ph-' + l));
     if (save) store('lang', l);
-    restartTyping();
     if (!list.hidden) renderResults();
   }
 
@@ -139,33 +135,22 @@
   });
 
   // ---- Yazılma animasiyası ----
-  var typedEl = document.getElementById('typed');
-  var typeTimer = null;
+  // Yazılmamış hissə şəffaf qalır ki, sətirlər yazılarkən yerindən oynamasın
+  var typedOn = document.getElementById('typedOn');
+  var typedOff = document.getElementById('typedOff');
 
-  function restartTyping() {
-    clearTimeout(typeTimer);
-    var words = TYPED[lang()];
-    if (reduceMotion) { typedEl.textContent = words[0]; return; }
-
-    // Birinci söz tam görünür, bir az gözləyib silinməyə başlayır
-    var w = 0, n = words[0].length, deleting = true;
-    typedEl.textContent = words[0];
-
+  function startTyping() {
+    if (reduceMotion) return;
+    var n = 0;
+    typedOn.textContent = '';
+    typedOff.textContent = MOTTO;
     function tick() {
-      var word = words[w];
-      if (!deleting) {
-        n++;
-        typedEl.textContent = word.slice(0, n);
-        if (n >= word.length) { deleting = true; typeTimer = setTimeout(tick, 2200); return; }
-        typeTimer = setTimeout(tick, 70);
-      } else {
-        n--;
-        typedEl.textContent = word.slice(0, n);
-        if (n <= 0) { deleting = false; w = (w + 1) % words.length; typeTimer = setTimeout(tick, 350); return; }
-        typeTimer = setTimeout(tick, 35);
-      }
+      n++;
+      typedOn.textContent = MOTTO.slice(0, n);
+      typedOff.textContent = MOTTO.slice(n);
+      if (n < MOTTO.length) setTimeout(tick, MOTTO[n - 1] === '\n' ? 350 : 40);
     }
-    typeTimer = setTimeout(tick, 2600);
+    setTimeout(tick, 500);
   }
 
   // ---- Axtarış ----
@@ -274,4 +259,5 @@
   if (year) year.textContent = new Date().getFullYear();
 
   setLang(lang(), false);
+  startTyping();
 })();
