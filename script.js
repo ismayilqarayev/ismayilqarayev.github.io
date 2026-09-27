@@ -37,7 +37,7 @@
     { href: '#skills', en: 'Windows, Linux, networks', az: 'Windows, Linux, şəbəkələr', sec: ['Skills', 'Bacarıqlar'], k: 'windows linux network sebeke infrastructure infrastruktur skills bacariq' },
     { href: '#languages', en: 'Languages', az: 'Dil bilikləri', sec: ['Languages', 'Dillər'], k: 'language dil azerbaijani azerbaycan russian rus turkish turk english ingilis c1 b1 a1' },
     { href: '#honours', en: 'Letter of Appreciation — Qarabag University', az: 'Təşəkkür məktubu — Qarabağ Universiteti', sec: ['Honour', 'Təltif'], k: 'honour award teltif appreciation tesekkur qarabag karabakh university universitet book donation kitab bagis' },
-    { href: '#contact', en: 'Contact details', az: 'Əlaqə məlumatları', sec: ['Contact', 'Əlaqə'], k: 'contact elaqe email e-poct poct phone telefon linkedin' },
+    { href: '#contact', en: 'Contact details', az: 'Əlaqə məlumatları', sec: ['Contact', 'Əlaqə'], k: 'contact elaqe email e-poct poct linkedin' },
     { href: 'assets/Ismayil-Garayev-CV.pdf', en: 'Download CV (PDF)', az: 'CV-ni yüklə (PDF)', sec: ['File', 'Fayl'], k: 'cv resume pdf download yukle', download: true }
   ];
 
