@@ -457,6 +457,20 @@ a.chip:hover { border-color: var(--blue); color: var(--blue); }
 .ticks-2 { columns: 2; column-gap: 36px; }
 .ticks-2 li { break-inside: avoid; }
 
+/* ============ Projects ============ */
+.projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.project { display: flex; flex-direction: column; overflow: hidden; border-radius: 16px; background: var(--card); }
+.project-shot { display: block; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--surface); }
+.project-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .4s ease; }
+.project:hover .project-shot img { transform: scale(1.02); }
+.project-body { display: flex; flex: 1; flex-direction: column; padding: 24px 26px 26px; }
+.project h3 { margin-bottom: 10px; font-size: 20px; }
+.project .desc { margin-bottom: 16px; }
+.chips-sm .chip { padding: 5px 12px; font-size: 13px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 20px; }
+.pill-ghost { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); }
+.pill-ghost:hover { border-color: var(--blue); background: var(--surface); color: var(--blue); }
+
 /* ============ Rows (education) ============ */
 .rows { border-top: 1px solid var(--line); }
 .row { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 20px; align-items: center; padding: 24px 4px; border-bottom: 1px solid var(--line); }
@@ -614,6 +628,8 @@ a.c-val:hover { color: var(--blue); }
   .job { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 22px 20px; }
   .job-side { flex-direction: row; flex-wrap: wrap; align-items: center; }
   .ticks-2 { columns: 1; }
+  .projects { grid-template-columns: minmax(0, 1fr); }
+  .project-body { padding: 20px; }
   .meta-rows { grid-template-columns: minmax(0, 1fr); }
   .collection { gap: 14px; padding: 12px 14px 12px 12px; }
   .collection { flex-wrap: wrap; }

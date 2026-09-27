@@ -26,6 +26,8 @@
     { href: '#experience', en: 'Computer Technical Specialist — FRITL', az: 'Kompüter texniki mütəxəssisi — FRİTL', sec: ['Experience', 'Təcrübə'], k: 'fritl lyceum lisey ganja gence technical support texniki destek 2022 is work' },
     { href: '#experience', en: 'EKTIS Specialist — Samukh', az: 'EKTİS mütəxəssisi — Samux', sec: ['Experience', 'Təcrübə'], k: 'ektis agrarian aqrar samukh samux kend teserrufati is work' },
     { href: '#experience', en: 'System Administrator — Cherkizovo', az: 'Sistem administratoru — Cherkizovo', sec: ['Experience', 'Təcrübə'], k: 'system administrator sistem admin cherkizovo moscow moskva russia rusiya windows linux network sebeke is work' },
+    { href: '#projects', en: 'Azercell Cup training platform', az: 'Azercell Cup hazırlıq platforması', sec: ['Project', 'Layihə'], k: 'project layihe azercell cup platform platforma judge yoxlayici c++ java spring boot olimpiada yaris contest github' },
+    { href: '#projects', en: 'Ganja FRITL lyceum website', az: 'Gəncə FRİTL liseyinin saytı', sec: ['Project', 'Layihə'], k: 'project layihe fritl lisey lyceum sayt website gence ganja steam kitabxana library spring boot' },
     { href: '#volunteering', en: 'C++ Instructor — Azercell Cup', az: 'C++ təlimçisi — Azercell Cup', sec: ['Volunteering', 'Könüllülük'], k: 'azercell cup volunteer konullu instructor telimci mentor fritl olimpiada' },
     { href: '#education', en: 'Computer Specialist — Baku', az: 'Kompüter mütəxəssisi — Bakı', sec: ['Education', 'Təhsil'], k: 'education tehsil baku baki vocational pese' },
     { href: '#certificates', en: 'Russian language & history certificate', az: 'Rus dili və tarixi sertifikatı', sec: ['Certificate', 'Sertifikat'], k: 'certificate sertifikat russian rus mcko moscow moskva' },
