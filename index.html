@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismayil Garayev — Computer Specialist &amp; C++ Author</title>
+  <meta name="description" content="Ismayil Garayev — computer specialist from Ganja, Azerbaijan. Windows &amp; Linux systems, networks, C++ and Java. Author of a C++ textbook held at the Bodleian Libraries, University of Oxford.">
+  <meta name="author" content="Ismayil Garayev">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1217" media="(prefers-color-scheme: dark)">
+
+  <link rel="canonical" href="https://ismayilqarayev.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://ismayilqarayev.github.io/">
+  <meta property="og:title" content="Ismayil Garayev — Computer Specialist &amp; C++ Author">
+  <meta property="og:description" content="Windows &amp; Linux systems, networks, C++ and Java. Author of a C++ textbook held at the Bodleian Libraries, Oxford.">
+  <meta property="og:image" content="https://ismayilqarayev.github.io/assets/photo.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    // Dil və tema seçimini səhifə görünməzdən əvvəl tətbiq et (yanıb-sönmə olmasın)
+    (function () {
+      var d = document.documentElement, l, t;
+      d.classList.add('js');
+      try { l = localStorage.getItem('lang'); t = localStorage.getItem('theme'); } catch (e) {}
+      var q = /[?&]lang=(az|en)\b/.exec(location.search); // ?lang=az linki ilə paylaşmaq üçün
+      if (q) l = q[1];
+      if (l !== 'az' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('az') === 0 ? 'az' : 'en';
+      d.setAttribute('data-lang', l);
+      d.lang = l;
+      if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#person",
+        "name": "Ismayil Garayev",
+        "url": "https://ismayilqarayev.github.io/",
+        "alternateName": "İsmayıl Qarayev",
+        "jobTitle": "Computer Specialist",
+        "nationality": "Azerbaijani",
+        "address": { "@type": "PostalAddress", "addressLocality": "Ganja", "addressCountry": "AZ" },
+        "email": "mailto:qarayevismayil170@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/ismayil-garayev-43761b336"],
+        "knowsLanguage": ["az", "ru", "tr", "en"],
+        "knowsAbout": ["C++", "Java", "Windows", "Linux", "Computer networking"]
+      },
+      {
+        "@type": "Book",
+        "name": "C++ Proqramlaşdırmanın Əsasları",
+        "alternateName": "Fundamentals of C++ Programming",
+        "author": { "@id": "#person" },
+        "inLanguage": "az",
+        "datePublished": "2024",
+        "publisher": { "@type": "Organization", "name": "Fener Nəşriyyatı" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="14" height="14" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="az">Məzmuna keç</span></a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="logo" href="#top" data-aria-en="Ismayil Garayev — home" data-aria-az="İsmayıl Qarayev — ana səhifə" aria-label="Ismayil Garayev — home">ismayil<span class="logo-dot"></span></a>
+
+      <div class="hdr-tools">
+        <div class="lang-dd">
+          <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" data-aria-en="Language" data-aria-az="Dil" aria-label="Language">
+            <span id="langCur">EN</span>
+            <svg class="i i-sm"><use href="#i-chev"/></svg>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" hidden>
+            <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="az" lang="az">Azərbaycanca</button>
+            <button type="button" role="menuitemradio" aria-checked="true" data-set-lang="en" lang="en">English</button>
+          </div>
+        </div>
+        <button type="button" class="round-btn" id="themeToggle" data-aria-en="Dark mode" data-aria-az="Qaranlıq rejim" aria-label="Dark mode" aria-pressed="false">
+          <svg class="i i-moon"><use href="#i-moon"/></svg>
+          <svg class="i i-sun"><use href="#i-sun"/></svg>
+        </button>
+        <a class="pill hdr-cta" href="#contact"><span data-l="en">Contact</span><span data-l="az">Əlaqə</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <button type="button" class="burger" id="menuToggle" aria-expanded="false" aria-controls="menuPanel" data-aria-en="Menu" data-aria-az="Menyu" aria-label="Menu">
+          <svg class="i i-open"><use href="#i-menu"/></svg>
+          <svg class="i i-close"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="menu-panel" id="menuPanel" data-aria-en="Main navigation" data-aria-az="Əsas naviqasiya" aria-label="Main navigation" hidden>
+      <div class="wrap menu-grid">
+        <div>
+          <h2 class="menu-h"><span data-l="en">Home</span><span data-l="az">Ana səhifə</span></h2>
+          <a href="#top"><span data-l="en">Home</span><span data-l="az">Ana səhifə</span></a>
+          <a href="#about"><span data-l="en">About me</span><span data-l="az">Haqqımda</span></a>
+          <a href="#book"><span data-l="en">C++ book</span><span data-l="az">C++ kitabı</span></a>
+        </div>
+        <div>
+          <h2 class="menu-h"><span data-l="en">Career</span><span data-l="az">Karyera</span></h2>
+          <a href="#experience"><span data-l="en">Work experience</span><span data-l="az">İş təcrübəsi</span></a>
+          <a href="#volunteering"><span data-l="en">Volunteering</span><span data-l="az">Könüllülük</span></a>
+          <a href="#education"><span data-l="en">Education &amp; certificates</span><span data-l="az">Təhsil və sertifikatlar</span></a>
+        </div>
+        <div>
+          <h2 class="menu-h"><span data-l="en">More</span><span data-l="az">Digər</span></h2>
+          <a href="#skills"><span data-l="en">Skills &amp; languages</span><span data-l="az">Bacarıqlar və dillər</span></a>
+          <a href="#honours"><span data-l="en">Honours</span><span data-l="az">Təltiflər</span></a>
+          <a href="#contact"><span data-l="en">Contact</span><span data-l="az">Əlaqə</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero-sec" id="top">
+      <div class="wrap">
+        <div class="hero">
+          <div class="hero-blobs" aria-hidden="true"></div>
+          <div class="hero-in">
+            <p class="hero-id">
+              <img src="assets/photo.png" width="250" height="250" alt="">
+              <span data-l="en">Computer Specialist · Ganja, Azerbaijan</span>
+              <span data-l="az">Kompüter mütəxəssisi · Gəncə, Azərbaycan</span>
+            </p>
+            <h1>
+              <span data-l="en">Hi, I’m Ismayil Garayev —</span>
+              <span data-l="az">Salam, mən İsmayıl Qarayev —</span>
+              <br>
+              <span class="typed-line"><span class="typed" id="typed"><span data-l="en">a C++ author</span><span data-l="az">C++ müəllifiyəm</span></span><span class="caret" aria-hidden="true"></span></span>
+            </h1>
+
+            <div class="search" role="search">
+              <label class="sr-only" for="q"><span data-l="en">Search this site</span><span data-l="az">Sayt üzrə axtarış</span></label>
+              <svg class="i search-ic" aria-hidden="true"><use href="#i-search"/></svg>
+              <input id="q" type="search" autocomplete="off" spellcheck="false"
+                     data-ph-en="Search this site"
+                     data-ph-az="Sayt üzrə axtarış edin"
+                     placeholder="Search this site"
+                     role="combobox" aria-expanded="false" aria-controls="qList" aria-autocomplete="list">
+              <ul class="search-list" id="qList" role="listbox" hidden></ul>
+            </div>
+
+            <div class="popular">
+              <span class="popular-lbl"><span data-l="en">#Most searched:</span><span data-l="az">#Ən çox axtarılanlar:</span></span>
+              <a class="chip" href="#book"><span data-l="en">C++ book</span><span data-l="az">C++ kitabı</span></a>
+              <a class="chip" href="#experience"><span data-l="en">Work experience</span><span data-l="az">İş təcrübəsi</span></a>
+              <a class="chip" href="#volunteering">Azercell Cup</a>
+              <a class="chip" href="#certificates"><span data-l="en">Certificates</span><span data-l="az">Sertifikatlar</span></a>
+              <a class="chip" href="#languages"><span data-l="en">Languages</span><span data-l="az">Dil bilikləri</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TILES ============ -->
+    <section class="sec" id="sections">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Everything in one place</span><span data-l="az">Hər şey bir yerdə</span></h2>
+          <a class="pill" href="assets/Ismayil-Garayev-CV.pdf" download><span data-l="en">Download CV</span><span data-l="az">CV-ni yüklə</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="tiles">
+          <a class="tile" href="#about"><span class="tile-ic"><svg class="i"><use href="#i-user"/></svg></span><span class="tile-t"><span data-l="en">About me</span><span data-l="az">Haqqımda</span></span></a>
+          <a class="tile" href="#book"><span class="tile-ic"><svg class="i"><use href="#i-book"/></svg></span><span class="tile-t"><span data-l="en">C++ book</span><span data-l="az">C++ kitabı</span></span></a>
+          <a class="tile" href="#experience"><span class="tile-ic"><svg class="i"><use href="#i-briefcase"/></svg></span><span class="tile-t"><span data-l="en">Work experience</span><span data-l="az">İş təcrübəsi</span></span></a>
+          <a class="tile" href="#volunteering"><span class="tile-ic"><svg class="i"><use href="#i-heart"/></svg></span><span class="tile-t"><span data-l="en">Volunteering</span><span data-l="az">Könüllülük</span></span></a>
+          <a class="tile" href="#education"><span class="tile-ic"><svg class="i"><use href="#i-cap"/></svg></span><span class="tile-t"><span data-l="en">Education</span><span data-l="az">Təhsil</span></span></a>
+          <a class="tile" href="#certificates"><span class="tile-ic"><svg class="i"><use href="#i-shield"/></svg></span><span class="tile-t"><span data-l="en">Certificates</span><span data-l="az">Sertifikatlar</span></span></a>
+          <a class="tile" href="#skills"><span class="tile-ic"><svg class="i"><use href="#i-code"/></svg></span><span class="tile-t"><span data-l="en">Skills</span><span data-l="az">Bacarıqlar</span></span></a>
+          <a class="tile" href="#languages"><span class="tile-ic"><svg class="i"><use href="#i-globe"/></svg></span><span class="tile-t"><span data-l="en">Languages</span><span data-l="az">Dillər</span></span></a>
+          <a class="tile" href="#honours"><span class="tile-ic"><svg class="i"><use href="#i-award"/></svg></span><span class="tile-t"><span data-l="en">Honours</span><span data-l="az">Təltiflər</span></span></a>
+          <a class="tile" href="#contact"><span class="tile-ic"><svg class="i"><use href="#i-mail"/></svg></span><span class="tile-t"><span data-l="en">Contact</span><span data-l="az">Əlaqə</span></span></a>
+          <a class="tile" href="assets/Ismayil-Garayev-CV.pdf" download><span class="tile-ic"><svg class="i"><use href="#i-download"/></svg></span><span class="tile-t"><span data-l="en">CV (PDF)</span><span data-l="az">CV (PDF)</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT (blue band) ============ -->
+    <section class="band" id="about">
+      <div class="wrap band-grid">
+        <div>
+          <h2 class="band-h"><span data-l="en">Systems, code and teaching — all in one person</span><span data-l="az">Sistemlər, kod və tədris — bir insanda</span></h2>
+          <div data-l="en">
+            <p>I am a knowledgeable and motivated computer specialist with experience in managing Windows and Linux systems as well as network configuration. I have strong skills in C++ and Java, and I am the author of a book on C++ programming.</p>
+            <p>Alongside my technical work, I teach C++: I have prepared students at FRITL in Ganja for the Azercell Cup competitions. Currently I am developing my software skills with Java and am always eager to learn new technologies.</p>
+          </div>
+          <div data-l="az">
+            <p>Windows və Linux sistemlərinin idarə edilməsi, eləcə də şəbəkə konfiqurasiyası sahəsində təcrübəyə malik, bilikli və motivasiyalı kompüter mütəxəssisiyəm. C++ və Java proqramlaşdırma dillərində güclü biliklərim var, həmçinin C++ proqramlaşdırması üzrə kitab müəllifiyəm.</p>
+            <p>Texniki işimlə yanaşı C++ tədris edirəm: Gəncədəki FRİTL-də şagirdləri Azercell Cup yarışlarına hazırlamışam. Hazırda Java ilə proqram təminatının hazırlanması üzrə bacarıqlarımı inkişaf etdirir, daim yeni texnologiyalar öyrənirəm.</p>
+          </div>
+          <a class="pill" href="#contact"><span data-l="en">Get in touch</span><span data-l="az">Əlaqə saxla</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <ul class="facts" role="list">
+          <li><svg class="i"><use href="#i-pin"/></svg><span data-l="en">Ganja, Azerbaijan</span><span data-l="az">Gəncə, Azərbaycan</span></li>
+          <li><svg class="i"><use href="#i-monitor"/></svg><span data-l="en">Windows, Linux and networks</span><span data-l="az">Windows, Linux və şəbəkələr</span></li>
+          <li><svg class="i"><use href="#i-code"/></svg><span data-l="en">C++ and Java programming</span><span data-l="az">C++ və Java proqramlaşdırma</span></li>
+          <li><svg class="i"><use href="#i-book"/></svg><span data-l="en">Author of a C++ textbook</span><span data-l="az">C++ dərsliyinin müəllifi</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ BOOK ============ -->
+    <section class="sec" id="book">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">C++ book</span><span data-l="az">C++ kitabı</span></h2>
+          <!-- Kitabın SOLO kataloqundakı birbaşa linkini tapsanız, bu href-i onunla əvəz edin -->
+          <a class="pill" href="https://solo.bodleian.ox.ac.uk/" target="_blank" rel="noopener"><span data-l="en">Oxford catalogue</span><span data-l="az">Oksford kataloqu</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="book-grid">
+          <div class="book-card" aria-hidden="true" lang="az">
+            <span class="book-author">İsmayıl Qarayev</span>
+            <span class="book-cpp">C++</span>
+            <span class="book-title">Proqramlaşdırmanın Əsasları</span>
+            <span class="book-foot"><span>Bakı · 2024</span><span class="book-badge">Bodleian Libraries, Oxford</span></span>
+          </div>
+          <div class="book-info">
+            <p class="date"><span data-l="en">2024 · Textbook in Azerbaijani</span><span data-l="az">2024 · Azərbaycan dilində dərslik</span></p>
+            <h3><span data-l="en">Fundamentals of C++ Programming</span><span data-l="az">C++ Proqramlaşdırmanın Əsasları</span></h3>
+            <p class="book-sub"><span data-l="en">Original title: <span lang="az">C++ Proqramlaşdırmanın Əsasları</span></span><span data-l="az">İngiliscə: <span lang="en">Fundamentals of C++ Programming</span></span></p>
+            <div data-l="en">
+              <p>I am the sole author of this independently written C++ textbook in Azerbaijani — one of the very few dedicated C++ programming resources available in the language. I developed it to support students taking part in the Azercell Cup, Azerbaijan’s foremost national technology competition.</p>
+              <p>The book has been formally accepted into the permanent international collection of the <strong>Bodleian Libraries, University of Oxford</strong>, and is held at the Radcliffe Science Library.</p>
+            </div>
+            <div data-l="az">
+              <p>Azərbaycan dilində müstəqil şəkildə yazılmış bu C++ dərsliyinin yeganə müəllifiyəm. Kitab bu dildə C++ proqramlaşdırmasına həsr olunmuş sayılı mənbələrdən biridir və Azərbaycanın aparıcı milli texnologiya müsabiqəsi olan Azercell Cup iştirakçılarına dəstək məqsədilə hazırlanıb.</p>
+              <p>Kitab <strong>Oksford Universitetinin Bodleian Kitabxanalarının</strong> daimi beynəlxalq kolleksiyasına rəsmi olaraq qəbul edilib və Radcliffe Elm Kitabxanasında (Radcliffe Science Library) saxlanılır.</p>
+            </div>
+            <dl class="meta-rows">
+              <div><dt><span data-l="en">Publisher</span><span data-l="az">Nəşriyyat</span></dt><dd><span data-l="en">Fener Nesriyyati, Baku</span><span data-l="az">Fener Nəşriyyatı, Bakı</span></dd></div>
+              <div><dt><span data-l="en">Year</span><span data-l="az">İl</span></dt><dd>2024</dd></div>
+              <div><dt><span data-l="en">Language</span><span data-l="az">Dil</span></dt><dd><span data-l="en">Azerbaijani</span><span data-l="az">Azərbaycan dili</span></dd></div>
+              <div><dt><span data-l="en">Held at</span><span data-l="az">Saxlanılır</span></dt><dd>Radcliffe Science Library, Oxford</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="sec" id="experience">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Work experience</span><span data-l="az">İş təcrübəsi</span></h2>
+        </div>
+        <div class="jobs">
+          <article class="job">
+            <div class="job-side">
+              <span class="date-pill">2022</span>
+              <p class="loc"><svg class="i i-sm"><use href="#i-pin"/></svg><span data-l="en">Ganja, Azerbaijan</span><span data-l="az">Gəncə, Azərbaycan</span></p>
+            </div>
+            <div class="job-main">
+              <h3><span data-l="en">Computer Technical Specialist</span><span data-l="az">Kompüter texniki mütəxəssisi</span></h3>
+              <p class="org"><span data-l="en">Ganja City Physics, Mathematics and Informatics Lyceum</span><span data-l="az">Gəncə şəhər Fizika, Riyaziyyat və İnformatika Təmayüllü Liseyi</span></p>
+              <ul class="ticks ticks-2" data-l="en">
+                <li>Provided technical support for computers, networks, and software within the lyceum.</li>
+                <li>Maintained and updated computer systems and hardware.</li>
+                <li>Assisted staff and students with IT-related issues and troubleshooting.</li>
+                <li>Ensured smooth operation of all office and classroom technology.</li>
+                <li>Implemented basic IT policies and system improvements.</li>
+              </ul>
+              <ul class="ticks ticks-2" data-l="az">
+                <li>Lisey daxilində kompüterlər, şəbəkələr və proqram təminatı üzrə texniki dəstək göstərmişəm.</li>
+                <li>Kompüter sistemlərinə və avadanlıqlara xidmət göstərmiş, onları yeniləmişəm.</li>
+                <li>Əməkdaşlara və şagirdlərə İT problemlərinin həllində kömək etmişəm.</li>
+                <li>Bütün ofis və sinif texnologiyalarının fasiləsiz işləməsini təmin etmişəm.</li>
+                <li>Əsas İT qaydalarını və sistem təkmilləşdirmələrini tətbiq etmişəm.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-side">
+              <span class="date-pill">05/2022 – 10/2022</span>
+              <p class="loc"><svg class="i i-sm"><use href="#i-pin"/></svg><span data-l="en">Samukh, Azerbaijan</span><span data-l="az">Samux, Azərbaycan</span></p>
+            </div>
+            <div class="job-main">
+              <h3><span data-l="en">EKTIS Specialist</span><span data-l="az">EKTİS mütəxəssisi</span></h3>
+              <p class="org"><span data-l="en">Samukh District State Agrarian Development Center</span><span data-l="az">Samux Rayon Dövlət Aqrar İnkişaf Mərkəzi</span></p>
+              <p class="desc" data-l="en">Specialist in the Electronic Agricultural Information System (EKTIS).</p>
+              <p class="desc" data-l="az">Elektron Kənd Təsərrüfatı İnformasiya Sistemi (EKTİS) üzrə mütəxəssis.</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-side">
+              <span class="date-pill">10/2021 – 11/2021</span>
+              <p class="loc"><svg class="i i-sm"><use href="#i-pin"/></svg><span data-l="en">Moscow, Russia</span><span data-l="az">Moskva, Rusiya</span></p>
+            </div>
+            <div class="job-main">
+              <h3><span data-l="en">System Administrator</span><span data-l="az">Sistem administratoru</span></h3>
+              <p class="org">Cherkizovo Group</p>
+              <p class="desc" data-l="en">Managed office IT infrastructure, ensured network stability, and maintained Windows and Linux systems.</p>
+              <p class="desc" data-l="az">Ofisin İT infrastrukturunu idarə etmiş, şəbəkənin sabit işləməsini təmin etmiş, Windows və Linux sistemlərinə xidmət göstərmişəm.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VOLUNTEERING ============ -->
+    <section class="sec" id="volunteering">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Volunteering</span><span data-l="az">Könüllülük</span></h2>
+        </div>
+        <article class="job job-blue">
+          <div class="job-side">
+            <span class="date-pill"><span data-l="en">Volunteer</span><span data-l="az">Könüllü</span></span>
+            <p class="loc"><svg class="i i-sm"><use href="#i-pin"/></svg><span data-l="en">FRITL, Ganja</span><span data-l="az">FRİTL, Gəncə</span></p>
+          </div>
+          <div class="job-main">
+            <h3><span data-l="en">C++ Programming Instructor</span><span data-l="az">C++ proqramlaşdırma təlimçisi</span></h3>
+            <p class="org">Azercell Cup</p>
+            <ul class="ticks ticks-2" data-l="en">
+              <li>Taught C++ programming to students preparing for Azercell Cup competitions at FRITL in Ganja.</li>
+              <li>Trained students in algorithmic problem-solving and coding techniques.</li>
+              <li>Prepared practice materials and sample problems for competition training.</li>
+              <li>Mentored and supported students throughout the preparation process.</li>
+              <li>Stepped in as an unofficial substitute instructor and led the optional Day 6 session.</li>
+            </ul>
+            <ul class="ticks ticks-2" data-l="az">
+              <li>Gəncədəki FRİTL-də Azercell Cup yarışlarına hazırlaşan şagirdlərə C++ proqramlaşdırma dərsləri keçmişəm.</li>
+              <li>Şagirdləri alqoritmik məsələ həlli və kodlaşdırma texnikaları üzrə hazırlamışam.</li>
+              <li>Yarış hazırlığı üçün təlim materialları və nümunə məsələlər hazırlamışam.</li>
+              <li>Hazırlıq prosesi boyunca şagirdlərə mentorluq etmiş və dəstək olmuşam.</li>
+              <li>Qeyri-rəsmi əvəzedici təlimçi kimi çıxış edib, könüllü 6-cı gün məşğələsini aparmışam.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATES ============ -->
+    <section class="sec" id="education">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Education &amp; certificates</span><span data-l="az">Təhsil və sertifikatlar</span></h2>
+        </div>
+        <div class="rows">
+          <div class="row">
+            <span class="row-ic"><svg class="i"><use href="#i-cap"/></svg></span>
+            <div class="row-main">
+              <p class="row-kind"><span data-l="en">Education</span><span data-l="az">Təhsil</span></p>
+              <h3><span data-l="en">Computer Specialist</span><span data-l="az">Kompüter mütəxəssisi</span></h3>
+              <p class="org"><span data-l="en">Baku State Vocational Education Center for Technology and Technologies</span><span data-l="az">Bakı Dövlət Texnologiya və Texnologiyalar üzrə Peşə Təhsili Mərkəzi</span></p>
+            </div>
+            <span class="row-meta"><span data-l="en">Baku, Azerbaijan</span><span data-l="az">Bakı, Azərbaycan</span></span>
+          </div>
+          <div class="row" id="certificates">
+            <span class="row-ic"><svg class="i"><use href="#i-shield"/></svg></span>
+            <div class="row-main">
+              <p class="row-kind"><span data-l="en">Certificate</span><span data-l="az">Sertifikat</span></p>
+              <h3><span data-l="en">Russian Language Proficiency, Russian History and Fundamentals of Russian Federation Legislation</span><span data-l="az">Rus dili, Rusiya tarixi və Rusiya Federasiyası qanunvericiliyinin əsasları üzrə bilik sertifikatı</span></h3>
+              <p class="org"><span data-l="en">Moscow Center for Quality of Education (GAOU DPO MCKO)</span><span data-l="az">Moskva Təhsil Keyfiyyəti Mərkəzi (GAOU DPO MCKO)</span></p>
+            </div>
+            <span class="row-meta">ID 0010000000001207865</span>
+          </div>
+          <div class="row">
+            <span class="row-ic"><svg class="i"><use href="#i-shield"/></svg></span>
+            <div class="row-main">
+              <p class="row-kind"><span data-l="en">Certificate</span><span data-l="az">Sertifikat</span></p>
+              <h3><span data-l="en">Doctor Web Antivirus Certificate</span><span data-l="az">Doctor Web antivirus sertifikatı</span></h3>
+              <p class="org">Doctor Web</p>
+            </div>
+            <span class="row-meta">ID 5510877</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS & LANGUAGES ============ -->
+    <section class="sec" id="skills">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Skills &amp; languages</span><span data-l="az">Bacarıqlar və dillər</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="panel">
+            <div class="group">
+              <h3 class="group-h"><span data-l="en">Programming</span><span data-l="az">Proqramlaşdırma</span></h3>
+              <ul class="chips" role="list">
+                <li class="chip chip-key">C++</li>
+                <li class="chip chip-key">Java</li>
+                <li class="chip"><span data-l="en">Algorithmic problem solving</span><span data-l="az">Alqoritmik məsələ həlli</span></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3 class="group-h"><span data-l="en">Systems &amp; networks</span><span data-l="az">Sistemlər və şəbəkələr</span></h3>
+              <ul class="chips" role="list">
+                <li class="chip">Windows</li>
+                <li class="chip">Linux</li>
+                <li class="chip"><span data-l="en">Network configuration</span><span data-l="az">Şəbəkə konfiqurasiyası</span></li>
+                <li class="chip"><span data-l="en">IT infrastructure</span><span data-l="az">İT infrastruktur</span></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3 class="group-h"><span data-l="en">Support</span><span data-l="az">Texniki dəstək</span></h3>
+              <ul class="chips" role="list">
+                <li class="chip"><span data-l="en">Technical support</span><span data-l="az">İstifadəçi dəstəyi</span></li>
+                <li class="chip"><span data-l="en">Hardware maintenance</span><span data-l="az">Avadanlıqlara xidmət</span></li>
+                <li class="chip"><span data-l="en">Troubleshooting</span><span data-l="az">Nasazlıqların aradan qaldırılması</span></li>
+                <li class="chip"><span data-l="en">EKTIS</span><span data-l="az">EKTİS</span></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h3 class="group-h"><span data-l="en">Teaching</span><span data-l="az">Tədris</span></h3>
+              <ul class="chips" role="list">
+                <li class="chip"><span data-l="en">C++ instruction</span><span data-l="az">C++ tədrisi</span></li>
+                <li class="chip"><span data-l="en">Mentoring</span><span data-l="az">Mentorluq</span></li>
+                <li class="chip"><span data-l="en">Training materials</span><span data-l="az">Təlim materialları</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel" id="languages">
+            <h3 class="group-h"><span data-l="en">Languages</span><span data-l="az">Dillər</span></h3>
+            <ul class="langs" role="list">
+              <li>
+                <div class="lang-top"><span class="lang-name"><span data-l="en">Azerbaijani</span><span data-l="az">Azərbaycan dili</span></span><span class="lang-lvl"><span data-l="en">Native</span><span data-l="az">Ana dili</span></span></div>
+                <div class="bar"><span style="width:100%"></span></div>
+              </li>
+              <li>
+                <div class="lang-top"><span class="lang-name"><span data-l="en">Russian</span><span data-l="az">Rus dili</span></span><span class="lang-lvl">C1</span></div>
+                <div class="bar"><span style="width:83%"></span></div>
+              </li>
+              <li>
+                <div class="lang-top"><span class="lang-name"><span data-l="en">Turkish</span><span data-l="az">Türk dili</span></span><span class="lang-lvl">B1</span></div>
+                <div class="bar"><span style="width:50%"></span></div>
+              </li>
+              <li>
+                <div class="lang-top"><span class="lang-name"><span data-l="en">English</span><span data-l="az">İngilis dili</span></span><span class="lang-lvl">A1</span></div>
+                <div class="bar"><span style="width:17%"></span></div>
+              </li>
+            </ul>
+            <p class="note">
+              <span data-l="en">CEFR levels: A1–A2 basic · B1–B2 independent · C1–C2 proficient user</span>
+              <span data-l="az">CEFR səviyyələri: A1–A2 başlanğıc · B1–B2 müstəqil · C1–C2 peşəkar istifadəçi</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONOURS ============ -->
+    <section class="sec" id="honours">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2><span data-l="en">Honours</span><span data-l="az">Təltiflər</span></h2>
+        </div>
+        <article class="news">
+          <div class="news-thumb" aria-hidden="true"><svg class="i"><use href="#i-award"/></svg></div>
+          <div>
+            <p class="date">06/2026 · <span data-l="en">Qarabag University</span><span data-l="az">Qarabağ Universiteti</span></p>
+            <h3><span data-l="en">Letter of Appreciation for a book donation</span><span data-l="az">Kitab bağışına görə təşəkkür məktubu</span></h3>
+            <p data-l="en">Received a letter of appreciation from Qarabag University for donating books to the university library. On behalf of the university’s professors, teachers and students, Rector Shahin Bayramov expressed his gratitude, noting that the donated publications made a significant contribution to the development and enrichment of the library of the newly established university.</p>
+            <p data-l="az">Universitet kitabxanasına kitab bağışladığım üçün Qarabağ Universitetindən təşəkkür məktubu almışam. Universitetin professor-müəllim heyəti və tələbələri adından rektor Şahin Bayramov bağışlanan nəşrlərin yeni yaradılmış Qarabağ Universitetinin kitabxanasının inkişafına və zənginləşməsinə əhəmiyyətli töhfə verdiyini qeyd edərək minnətdarlığını bildirib.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="sec sec-last" id="contact">
+      <div class="wrap">
+        <div class="contact-head">
+          <div>
+            <h2><span data-l="en">Get in touch</span><span data-l="az">Əlaqə saxlayın</span></h2>
+            <p>
+              <span data-l="en">Feel free to reach out by email, phone, or LinkedIn — I will be happy to answer.</span>
+              <span data-l="az">E-poçt, telefon və ya LinkedIn vasitəsilə mənimlə əlaqə saxlaya bilərsiniz — məmnuniyyətlə cavab verərəm.</span>
+            </p>
+          </div>
+          <a class="pill" href="mailto:qarayevismayil170@gmail.com"><span data-l="en">Send an email</span><span data-l="az">E-poçt göndər</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="contact-cards">
+          <div class="c-card">
+            <span class="c-ic"><svg class="i"><use href="#i-mail"/></svg></span>
+            <span class="c-body">
+              <span class="c-lbl"><span data-l="en">Email</span><span data-l="az">E-poçt</span></span>
+              <a class="c-val" href="mailto:qarayevismayil170@gmail.com">qarayevismayil170@gmail.com</a>
+              <button type="button" class="copy-btn" id="copyEmail" data-copy="qarayevismayil170@gmail.com">
+                <span class="copy-idle"><svg class="i i-sm"><use href="#i-copy"/></svg><span data-l="en">Copy</span><span data-l="az">Kopyala</span></span>
+                <span class="copy-done"><svg class="i i-sm"><use href="#i-check"/></svg><span data-l="en">Copied</span><span data-l="az">Kopyalandı</span></span>
+              </button>
+            </span>
+          </div>
+          <div class="c-card">
+            <span class="c-ic"><svg class="i"><use href="#i-phone"/></svg></span>
+            <span class="c-body">
+              <span class="c-lbl"><span data-l="en">Phone</span><span data-l="az">Telefon</span></span>
+              <a class="c-val" href="tel:+994519793961">+994 51 979 39 61</a>
+            </span>
+          </div>
+          <div class="c-card">
+            <span class="c-ic"><svg class="i"><use href="#i-pin"/></svg></span>
+            <span class="c-body">
+              <span class="c-lbl"><span data-l="en">Location</span><span data-l="az">Məkan</span></span>
+              <span class="c-val"><span data-l="en">Ganja, Azerbaijan</span><span data-l="az">Gəncə, Azərbaycan</span></span>
+            </span>
+          </div>
+        </div>
+
+        <p class="updated"><span data-l="en">Page last updated:</span><span data-l="az">Səhifənin son yenilənmə tarixi:</span> <strong id="updated">27.09.2026</strong></p>
+
+        <div class="link-row">
+          <a href="https://www.linkedin.com/in/ismayil-garayev-43761b336" target="_blank" rel="noopener"><span><span data-l="en">LinkedIn profile</span><span data-l="az">LinkedIn profili</span></span><svg class="i"><use href="#i-arrow"/></svg></a>
+          <a href="https://solo.bodleian.ox.ac.uk/" target="_blank" rel="noopener"><span><span data-l="en">Bodleian Libraries catalogue, Oxford</span><span data-l="az">Bodleian Kitabxanaları kataloqu, Oksford</span></span><svg class="i"><use href="#i-arrow"/></svg></a>
+          <a href="assets/Ismayil-Garayev-CV.pdf" download><span><span data-l="en">CV — download PDF</span><span data-l="az">CV — PDF yüklə</span></span><svg class="i"><use href="#i-arrow"/></svg></a>
+          <a href="mailto:qarayevismayil170@gmail.com"><span><span data-l="en">Write an email</span><span data-l="az">E-poçt yaz</span></span><svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <p>© <span id="year">2026</span> <span data-l="en">Ismayil Garayev · Personal website</span><span data-l="az">İsmayıl Qarayev · Şəxsi veb sayt</span></p>
+      <a href="#top"><span data-l="en">Back to top</span><span data-l="az">Yuxarı qayıt</span> ↑</a>
+    </div>
+  </footer>
+
+  <a class="to-top" id="toTop" href="#top" data-aria-en="Back to top" data-aria-az="Yuxarı qayıt" aria-label="Back to top"><svg class="i"><use href="#i-up"/></svg></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
