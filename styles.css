@@ -394,10 +394,31 @@ a.chip:hover { border-color: var(--blue); color: var(--blue); }
 .book-sub { margin: 6px 0 18px; color: var(--muted); font-style: italic; }
 .book-info [data-l] > p { color: var(--text); }
 .book-info strong { color: var(--ink); }
-.meta-rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; margin: 24px 0 0; }
+.meta-rows { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; margin: 24px 0 0; }
 .meta-rows div { padding: 14px 0; border-top: 1px solid var(--line); }
 .meta-rows dt { color: var(--muted); font-size: 13px; }
 .meta-rows dd { margin: 2px 0 0; color: var(--ink); font-weight: 600; }
+
+.collection {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+  padding: 14px 20px 14px 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .15s ease;
+}
+.collection:hover { border-color: var(--blue); }
+.collection img { flex: none; width: 88px; height: 88px; border-radius: 12px; }
+.collection-body { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.collection-lbl { color: var(--muted); font-size: 13px; }
+.collection-t { font-size: 17px; font-weight: 700; line-height: 1.35; }
+.collection-sub { color: var(--ink-2); font-size: 14px; }
+.collection > .i { color: var(--blue); stroke-width: 2.2; }
 
 /* ============ Jobs ============ */
 .jobs { display: grid; gap: 16px; }
@@ -593,6 +614,9 @@ a.c-val:hover { color: var(--blue); }
   .job-side { flex-direction: row; flex-wrap: wrap; align-items: center; }
   .ticks-2 { columns: 1; }
   .meta-rows { grid-template-columns: minmax(0, 1fr); }
+  .collection { gap: 14px; padding: 12px 14px 12px 12px; }
+  .collection img { width: 68px; height: 68px; border-radius: 10px; }
+  .collection-t { font-size: 15px; }
 
   .row { grid-template-columns: 48px minmax(0, 1fr); gap: 16px; align-items: start; }
   .row-ic { width: 44px; height: 44px; }
