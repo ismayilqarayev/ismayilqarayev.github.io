@@ -413,7 +413,8 @@ a.chip:hover { border-color: var(--blue); color: var(--blue); }
   transition: border-color .15s ease;
 }
 .collection:hover { border-color: var(--blue); }
-.collection img { flex: none; width: 88px; height: 88px; border-radius: 12px; }
+.collection-logos { display: flex; flex: none; gap: 8px; }
+.collection-logos img { width: 60px; height: 60px; border-radius: 10px; }
 .collection-body { display: flex; flex: 1; flex-direction: column; min-width: 0; }
 .collection-lbl { color: var(--muted); font-size: 13px; }
 .collection-t { font-size: 17px; font-weight: 700; line-height: 1.35; }
@@ -615,7 +616,10 @@ a.c-val:hover { color: var(--blue); }
   .ticks-2 { columns: 1; }
   .meta-rows { grid-template-columns: minmax(0, 1fr); }
   .collection { gap: 14px; padding: 12px 14px 12px 12px; }
-  .collection img { width: 68px; height: 68px; border-radius: 10px; }
+  .collection { flex-wrap: wrap; }
+  .collection-logos img { width: 48px; height: 48px; border-radius: 8px; }
+  .collection-body { flex-basis: 100%; order: 2; }
+  .collection > .i { margin-left: auto; }
   .collection-t { font-size: 15px; }
 
   .row { grid-template-columns: 48px minmax(0, 1fr); gap: 16px; align-items: start; }
