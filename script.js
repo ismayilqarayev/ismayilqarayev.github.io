@@ -21,7 +21,7 @@
   // Sayt daxili axtarış üçün indeks
   var SEARCH = [
     { href: '#about', en: 'About me', az: 'Haqqımda', sec: ['Section', 'Bölmə'], k: 'about haqqimda bio kim computer specialist komputer mutexessisi' },
-    { href: '#book', en: 'Fundamentals of C++ Programming', az: 'C++ Proqramlaşdırmanın Əsasları', sec: ['Book', 'Kitab'], k: 'c++ book kitab textbook derslik fener nesriyyat 2024 muellif author oxford oksford bodleian' },
+    { href: '#book', en: 'Fundamentals of C++ Programming', az: 'C++ Proqramlaşdırmanın Əsasları', sec: ['Book', 'Kitab'], k: 'c++ book kitab textbook derslik fener nesriyyat nesriyyati 2024 muellif author oxford oksford bodleian' },
     { href: '#book', en: 'Bodleian Libraries, Oxford', az: 'Bodleian Kitabxanaları, Oksford', sec: ['Book', 'Kitab'], k: 'oxford oksford bodleian radcliffe library kitabxana university universitet' },
     { href: '#experience', en: 'Computer Technical Specialist — FRITL', az: 'Kompüter texniki mütəxəssisi — FRİTL', sec: ['Experience', 'Təcrübə'], k: 'fritl lyceum lisey ganja gence technical support texniki destek 2022 is work' },
     { href: '#experience', en: 'EKTIS Specialist — Samukh', az: 'EKTİS mütəxəssisi — Samux', sec: ['Experience', 'Təcrübə'], k: 'ektis agrarian aqrar samukh samux kend teserrufati is work' },
